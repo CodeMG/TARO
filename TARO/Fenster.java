@@ -20,7 +20,7 @@ public class Fenster {
         menue=new Hauptmenue(this);
         fenster.setSize(fensterX,fensterY);
         fenster.setLocationRelativeTo(null);        
-        fenster.setResizable(false);
+        fenster.setResizable(true);
         fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
         fenster.add(menue);
         Optionsmenue.einstellungenLaden();
@@ -45,7 +45,7 @@ public class Fenster {
 
     public static void fullscreenAus(){
         fenster.dispose();
-        fenster. setSize(fensterX,fensterY);
+        fenster.setSize(fensterX,fensterY);
         fenster.setLocationRelativeTo(null);        
         fenster.setResizable(false);
         fenster.setUndecorated(false);

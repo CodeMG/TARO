@@ -32,7 +32,7 @@ public class Hauptmenue extends JPanel implements ActionListener{
         beenden = new Knopf("Beenden",1.0/2.0, 5.0/6.0, 1.0/2.0, 1.0/6.0,font,this);
         beenden.addActionListener(this);
 
-        titel=new Knopf("MSTTRPGU", 1.0/2.0, 1.0/30.0, 15.0, 1.0/4.0, font, this);
+        titel=new Knopf("TARO", 1.0/2.0, 1.0/30.0, 15.0, 1.0/4.0, font, this);
         titel.setEnabled(false);
         
         status=new Knopf("Early Access - Pre-Alpha - Demo", 1.0/2.0, 1.0/5.0, 15.0, 1.0/8.0, font, this);
@@ -64,7 +64,7 @@ public class Hauptmenue extends JPanel implements ActionListener{
         beenden = new Knopf("Beenden",1.0/2.0, 5.0/6.0, 1.0/2.0, 1.0/6.0,font,this);
         beenden.addActionListener(this);
 
-        titel=new Knopf("MSTTRPGU", 1.0/2.0, 1.0/20.0, 15.0, 1.0/4.0, font, this);
+        titel=new Knopf("TARO", 1.0/2.0, 1.0/20.0, 15.0, 1.0/4.0, font, this);
         titel.setEnabled(false);
         
         status=new Knopf("Early Access - Pre-Alpha - Demo", 1.0/2.0, 1.0/5.0, 15.0, 1.0/8.0, font, this);

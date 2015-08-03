@@ -32,13 +32,13 @@ public class Hauptmenue extends JPanel implements ActionListener{
         beenden = new Knopf("Beenden",1.0/2.0, 5.0/6.0, 1.0/2.0, 1.0/6.0,font,this);
         beenden.addActionListener(this);
 
-        titel=new Knopf("MSTTRPGU", 1.0/2.0, 1.0/30.0, 15.0, 1.0/4.0, font, this);
+        titel=new Knopf("TARO", 1.0/2.0, 1.0/30.0, 15.0, 1.0/4.0, font, this);
         titel.setEnabled(false);
         
         status=new Knopf("Early Access - Pre-Alpha - Demo", 1.0/2.0, 1.0/5.0, 15.0, 1.0/8.0, font, this);
         status.setEnabled(false);
 
-        //klicksound=new Sound("fins__button.wav");
+        klicksound=new Sound("fins__button.wav");
         setVisible(true);
     }
     
@@ -70,7 +70,7 @@ public class Hauptmenue extends JPanel implements ActionListener{
         status=new Knopf("Early Access - Pre-Alpha - Demo", 1.0/2.0, 1.0/5.0, 15.0, 1.0/8.0, font, this);
         status.setEnabled(false);
 
-        //klicksound=new Sound("fins__button.wav");
+        klicksound=new Sound("fins__button.wav");
         setVisible(true);
     }
 
@@ -85,16 +85,16 @@ public class Hauptmenue extends JPanel implements ActionListener{
 
     public void actionPerformed(ActionEvent e){
         if(Optionsmenue.soundAnAus()==true){
-            //klicksound.start();
+            klicksound.start();
         }
         if(e.getSource() == spielstart){
             //Spiel starten
             if(Optionsmenue.musikAnAus()==true){
-                //Fenster.musikHalt();
-                //Fenster.musikWeiter("FFI-Overworld.wav");
+                Fenster.musikHalt();
+                Fenster.musikWeiter("FFI-Overworld.wav");
             }
             else{
-                //Fenster.musikHalt();
+                Fenster.musikHalt();
             }
             Spielschleife.fortsetzen();
             Fenster.setPauseAn(false);

@@ -6,8 +6,8 @@ public class Sound{
     private static FloatControl gainControl;
     static double gain = 0;
     public Sound(String pfad){
-       try {
-            AudioInputStream ais = AudioSystem.getAudioInputStream(getClass().getResource(pfad));
+       /*try {
+           AudioInputStream ais = AudioSystem.getAudioInputStream(getClass().getResource(pfad));
             //AudioInputStream ais = AudioSystem.getAudioInputStream(new File("C:\\windows\\media\\chimes.wav"));
             // AudioInputStream ais = AudioSystem.getAudioInputStream(new File("C:\\alarm.wav"));
             AudioFormat format = ais.getFormat();
@@ -16,21 +16,22 @@ public class Sound{
             clip.open(ais);
 
             gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     public void start(){
-       clip.start();
+       //clip.start();
     }
 
     public void stop(){
-        clip.stop();
+        //clip.stop();
     }
 
     public void loop(){
-        clip.loop((int)clip.getMicrosecondLength());
+        //clip.loop((int)clip.getMicrosecondLength());
     }
 
     public static void lautstaerkeErhoehen(){

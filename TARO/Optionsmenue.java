@@ -13,7 +13,8 @@ public class Optionsmenue extends Hauptmenue implements ActionListener, KeyListe
     private static Knopf vollbild, klein, mittel, gross; //Fenstergrößemenü
     private static Knopf links, rechts, oben, unten, angriff, benutzen, pause;
     private static boolean fullscreenAn=true;
-    private static int fenstergroesseX, fenstergroesseY;
+    private static int fenstergroesseX=800;
+    private static int fenstergroesseY=600;
     private static boolean musikIstAn=true;
     private static boolean soundIstAn=true;
     private static double musikBalkenPosition=0.5; //Position des Musiklautstärkebalkens
@@ -557,7 +558,7 @@ public class Optionsmenue extends Hauptmenue implements ActionListener, KeyListe
                 e.printStackTrace();
             }
         }
-        catch(FileNotFoundException e){}
+        catch(FileNotFoundException e){einstellungenSpeichern();}
     }
 
     public static boolean soundAnAus(){

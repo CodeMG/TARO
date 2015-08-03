@@ -56,6 +56,8 @@ public class Optionsmenue extends Hauptmenue implements ActionListener, KeyListe
         setBackground(Color.ORANGE);
         setLayout(null);
         setFocusable(true);
+        fenstergroesseX=container.getFensterX();
+        fenstergroesseY=container.getFensterY();
 
         InputStream fin = this.getClass().getResourceAsStream("burnstown dam.ttf");
         try {font = Font.createFont ( Font.PLAIN,fin).deriveFont(24f);}

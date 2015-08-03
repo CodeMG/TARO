@@ -45,7 +45,7 @@ public class Bilder{
         baum = bildHinzufuegenAusPfad("texturen//Bilder//Sonstiges//baum.png");
         baummaske = bildHinzufuegenAusPfad("texturen//Masken//Sonstiges//baum.png");
         
-        huette = bildHinzufuegenAusPfad("texturen//Bilder//Sonstiges//huette.png");
+        huette = bildHinzufuegenAusPfad("texturen//Bilder//Sonstiges//haus.png");
         huettenmaske = bildHinzufuegenAusPfad("texturen//Masken//Sonstiges//huette.png");
 
         npc = new BufferedImage[3];
